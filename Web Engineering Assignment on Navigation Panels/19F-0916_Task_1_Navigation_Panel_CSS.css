@@ -1,0 +1,11 @@
+div.Menu{
+    font-family: sans-serif;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin-top: 15%;
+}
+.listing{
+    flex: 1;
+    margin-right: 8px;
+}

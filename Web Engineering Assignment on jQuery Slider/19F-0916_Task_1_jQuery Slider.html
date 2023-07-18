@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>19F-0916 M Abdullah SE(6A) WE Course Assignment 4</title>
+    <style>
+        .Animate{
+            animation-name: fade;
+            animation-duration: 2s;
+        }
+        @keyframes fade{
+            from{opacity: .7;}
+            to{opacity: 1;}
+        }
+        .ImgNumber {
+            color: #f2f2f2;
+            font-size: 30px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        .ImgCpation {
+            color: #f2f2f2;
+            font-size: 40px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            bottom: 15%;
+        }
+        .nextImage, .prevImage {
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            font-weight: bold;
+            font-size: 28px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            color: white;
+        }
+        .nextImage{
+            right: 30.4%;
+        }
+        .prevImage:hover, .nextImage:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+    </style>
+    <script>
+        var slideIndex = 1;
+        $(document).ready(function(){
+            $(".Slides").hide();
+            showSlides(slideIndex);
+        });
+
+        function goNext(index) {
+          showSlides(slideIndex += index);
+        }
+
+        function goBack(index) {
+          showSlides(slideIndex -= index);
+        }
+        
+        function currentSlide(index) {
+          showSlides(slideIndex = index);
+        }
+        
+        function showSlides(index) {
+          var loop;
+          var slides = $(".Slides");
+          if (index > slides.length) {slideIndex = 1}    
+          if (index < 1) {slideIndex = slides.length}
+          for (loop = 0; loop < slides.length; loop++) {
+              slides[loop].style.display = "none";  
+          }
+          $slides[slideIndex-1].style.display = "block";  
+        }
+        </script>
+        
+</head>
+<body>
+    <div class="GamingSlideShows">
+    <div class="Slides Animate">
+        <div class="ImgNumber">1/5</div>
+            <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fnerdreactor.com%2F2015%2F01%2F05%2Fassassins-creed-movie-december-2016%2F&psig=AOvVaw0ov0zfsfoavnchFUfdMIc9&ust=1646647612405000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCNC7vcSesfYCFQAAAAAdAAAAABAO" target="_blank">
+                <img src="https://nerdreactor.com/wp-content/uploads/2014/09/assassins-creed-1.jpg" alt="Assassins Creed" width="70%">
+            </a>
+        <div class="ImgCpation">Assassin's Creed</div>
+    </div>
+    <div class="Slides Animate">
+        <div class="ImgNumber">2/5</div>
+            <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fdotesports.com%2Fvalorant%2Fnews%2Friot-on-new-valorant-agent-chamber-different-ways-approach-sentinel-role&psig=AOvVaw32uTNem0wRHeLPtcngyx-C&ust=1646648293526000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLiB44yhsfYCFQAAAAAdAAAAABAJ" target="_blank">
+                <img src="https://cdn1.dotesports.com/wp-content/uploads/2021/10/29081044/Chamber_Wallpaper.png" alt="Valorant" width="70%">
+            </a>
+        <div class="ImgCpation">Valorant</div>
+    </div>
+    <div class="Slides Animate">
+        <div class="ImgNumber">3/5</div>
+            <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.fanatical.com%2Fen%2Fgame%2Ftom-clancys-ghost-recon-wildlands&psig=AOvVaw2zsbEPCrDwsOdMk6-Sr8Nd&ust=1646648358287000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLjQyKihsfYCFQAAAAAdAAAAABAD" target="_blank">
+                <img src="https://cdn-ext.fanatical.com/production/product/1280x720/78b13ac9-a541-453a-bbd4-8ed9ec82328b.jpeg" alt="Wildlands" width="70%">
+            </a>
+        <div class="ImgCpation">Ghost Recon Wildlands</div>
+    </div>
+    <div class="Slides Animate">
+        <div class="ImgNumber">4/5</div>
+            <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.firstpost.com%2Ftech%2Fnews-analysis%2Fcall-of-duty-black-ops-cold-war-will-reportedly-be-released-on-10-august-8683421.html&psig=AOvVaw1zyDi1nrq2ur-9O_U9fuZ0&ust=1646653011288000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKDhnNaysfYCFQAAAAAdAAAAABAD" target="_blank">
+                <img src="https://images.firstpost.com/wp-content/uploads/2018/07/call-of-duty-1093574-800.jpeg" alt="COD" width="70%">
+            </a>
+        <div class="ImgCpation">Call of Duty</div>
+    </div>
+    <div class="Slides Animate">
+        <div class="ImgNumber">5/5</div>
+            <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F1245620%2FELDEN_RING%2F&psig=AOvVaw0PGLvdNqdK1B_F9M9zc3cq&ust=1646648449598000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCOjckdOhsfYCFQAAAAAdAAAAABAI" target="_blank">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/ss_e80a907c2c43337e53316c71555c3c3035a1343e.1920x1080.jpg?t=1646406355" alt="Assassins Creed" width="70%">
+            </a>
+        <div class="ImgCpation">Elder Ring</div>
+    </div>
+    <a class="prevImage" onclick="goBack(1)">&#10094;</a>
+    <a class="nextImage" onclick="goNext(1)">&#10095;</a>
+</div>
+</body>
+</html>

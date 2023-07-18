@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration Form Assignment 1 19F-0916</title>
+</head>
+<body>
+    <h1 style="margin-left: 6em">Course Registration Form</h1>
+    <br><br>
+    <label for="ss"  style="margin-left: 13em"><big><b>Select Current Session:</b></big></label>
+    <input type="radio" name="session" style="margin-left: 2em">
+    <label for="Session1"> Fall</label>
+    <input type="radio" name="session" style="margin-left: 1em">
+    <label for="Session2"> Spring</label>
+    <br><br>
+    <form action="/submit.html">
+    <table style="margin-left: 5em">
+        <tr>
+            <td><label for="name"> *Student Name:</label></td>
+            <td><input type="text" id="name" required></td>
+            <td><label for="roll" style="margin-left: 2em"> *Student Roll Number:</label></td>
+            <td><input type="text" id="roll" required></td>
+        </tr>
+        <tr>
+            <td><label for="deg"> *Current Degree:</label></td>
+            <td><input type="text" id="deg" required></td>
+            <td><label for="sect" style="margin-left: 2em"> *Current Section:</label></td>
+            <td><input type="text" id="sect" required></td>
+        </tr>
+        <tr>
+            <td><label for="sem"> *Current Semester:</label></td>
+            <td><input type="number" id="sem" required></td>
+            <td><label for="cgpa" style="margin-left: 2em"> *Current CGPA:</label></td>
+            <td><input type="number" id="cgpa" required></td>
+        </tr>
+    </table>
+    <br>
+    <table style="margin-left: 5em">
+        <tr>
+            <td><big><b>Enter the Code of Courses you want to Register:</b></big></td>
+        </tr>
+        <tr>
+            <td><label for="c1"> *Enter the code of First Course to Register it:</label></td>
+            <td><input type="text" id="c1" required></td>
+        </tr>
+        <tr>
+            <td><label for="c2"> *Enter the code of Second Course to Register it:</label></td>
+            <td><input type="text" id="c2" required></td>
+        </tr>
+        <tr>
+            <td><label for="c3"> *Enter the code of Third Course to Register it:</label></td>
+            <td><input type="text" id="c3" required></td>
+        </tr>
+        <tr>
+            <td><label for="c4"> *Enter the code of Forth Course to Register it:</label></td>
+            <td><input type="text" id="c4" required></td>
+        </tr>
+        <tr>
+            <td><label for="c5" > *Enter the code of Fifth Course to Register it:</label></td>
+            <td><input type="text" id="c5" required></td>
+        </tr>
+    </table>
+    <ul style="margin-left: 3.6em">
+        <li><b>NOTE:</b> To register more than 5 Courses, please visit Student Advisor.</li>
+        <li><b>NOTE:</b> For Course Code, Please Visit <a href="https://cfd.nu.edu.pk/all-departments/" target="_blank">Tentative plan Section</a>.</li>
+    </ul>
+    <br>
+    <input type="submit" value="Submit Details" style="margin-left: 17em">
+    <input type="reset" value="Reset Details" style="margin-left: 1em">
+    </form>
+    <br><br>
+    <p style="margin-left: 5em">For further details, Use following refrences:</p>
+    <ul style="margin-left: 3em">
+        <li>Call Us At: +92 123 123 123 12</li>
+        <li>Email Us At: f190916@nu.edu.pk</li>
+        <li>Visit Our Website: <a href="https://cfd.nu.edu.pk/" target="_blank">FAST-NUCES CFD Campus</a></li>
+    </ul>
+</body>
+</html>

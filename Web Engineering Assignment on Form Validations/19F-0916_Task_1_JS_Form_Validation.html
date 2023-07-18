@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19F-0916 M.Abdullah SE(6A) Web Engineering Course Assignment 3</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+</head>
+<body style="background-color: rgb(195, 226, 226);">
+    <div class="jumbotron" style="width: 78%;margin-left: 11%;background-color:#faa301">
+        <div class="row" style="text-align: center;font-size: large;">
+            <div class="col-lg-12"> <h1 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Welcome to JS FORM VALIDATION</h1></div>
+        </div>
+    </div>  
+    <div style="font-family:'Courier New', Courier, monospace;font-size: 18px;">
+        <form name="JS" action="/submit.html" method="post">
+        <table style="width: 40%;margin-left: auto;margin-right: auto;">
+            <tr>
+                <td><label for="name" > Enter your Full Name </label></td>
+                <td><input type="text" placeholder="e.g Smith Tee" name="name" id="name" onchange="NameChanged()" style="text-align: center;width: 100%;" required></td>
+                <script>
+                    function NameChanged(){
+                        let Name = document.forms["JS"]["name"].value;
+                        const nameFormat = /^[a-zA-Z\s]*$/;
+                        if (nameFormat.test(Name) === false) {
+                            document.forms["JS"]["name"].value = "Invalid Name";
+                            document.forms["JS"]["name"].style.color = 'red';
+                            document.forms["JS"]["name"].style.fontFamily = 'sans-serif';
+                        }else{
+                            document.forms["JS"]["name"].style.color = 'green';
+                            document.forms["JS"]["name"].style.fontFamily='Courier New', Courier, monospace;
+                        }
+                    }
+                </script>
+            </tr>
+            <tr>
+               <td ><label for="roll"> Enter your Roll Number </label></td>
+               <td><input type="text" placeholder="XXF-0000" name="roll" onchange="RollChanged()" style="text-align: center;width: 100%;" required></td >
+                <script>
+                    function RollChanged(){
+                        let Roll = document.forms["JS"]["roll"].value;
+                        const rollFormat = /\d\d\w-\d\d\d\d/;
+                        if (rollFormat.test(Roll) === false) {  
+                            document.forms["JS"]["roll"].value = "Invalid Roll No.";
+                            document.forms["JS"]["roll"].style.color = 'red';
+                            document.forms["JS"]["roll"].style.fontFamily = 'sans-serif';
+                        }else{
+                            document.forms["JS"]["roll"].style.color = 'green';
+                            document.forms["JS"]["roll"].style.fontFamily='Courier New', Courier, monospace;
+                        }
+                    }
+                </script>
+            </tr>
+            <tr>
+                <td><label for="cnic"> Enter your CNIC Number </label></td>
+                <td><input type="text" placeholder="00000-0000000-0" name="cnic" onchange="CNICChanged()" style="text-align: center;width: 100%;" required></td>
+                <script>
+                    function CNICChanged(){
+                        let Cnic = document.forms["JS"]["cnic"].value;
+                        const cnicFormat = /\d\d\d\d\d-\d\d\d\d\d\d\d-\d/;
+                        if (cnicFormat.test(Cnic) === false) {
+                            document.forms["JS"]["cnic"].value = "Invalid CNIC";
+                            document.forms["JS"]["cnic"].style.color = 'red';
+                            document.forms["JS"]["cnic"].style.fontFamily = 'sans-serif';
+                        }else{
+                            document.forms["JS"]["cnic"].style.color = 'green';
+                            document.forms["JS"]["cnic"].style.fontFamily='Courier New', Courier, monospace;
+                        }
+                    }
+                </script>
+           </tr>
+            <tr>
+                <td><label for="landNo"> Enter your Landline Number </label></td>
+                <td><input type="text" placeholder="000-0000000" name="landNo" onchange="LnoChanged()" style="text-align: center;width: 100%;" required></td>
+                <script>
+                    function LnoChanged(){
+                        let LandNo = document.forms["JS"]["landNo"].value;
+                        const landFormat = /\d\d\d-\d\d\d\d\d\d\d/;
+                        if (landFormat.test(LandNo) === false) {
+                            document.forms["JS"]["landNo"].value = "Invalid LandLine No.";
+                            document.forms["JS"]["landNo"].style.color = 'red';
+                            document.forms["JS"]["landNo"].style.fontFamily = 'sans-serif';
+                        }else{
+                            document.forms["JS"]["landNo"].style.color = 'green';
+                            document.forms["JS"]["landNo"].style.fontFamily='Courier New', Courier, monospace;
+                        }
+                    }
+                </script>
+            </tr>
+            <tr>
+                <td><label for="mobNo"> Enter your Mobile Number </label></td>
+                <td><input type="text" placeholder="0000-0000000" name="mobNo" onchange="MnoChanged()" style="text-align: center;width: 100%;" required></td>
+                <script>
+                    function MnoChanged(){
+                        let MobNo = document.forms["JS"]["mobNo"].value;
+                        const mobFormat = /\d\d\d\d-\d\d\d\d\d\d\d/;
+                        if (mobFormat.test(MobNo) === false) {
+                            document.forms["JS"]["mobNo"].value = "Invalid Mobile No.";
+                            document.forms["JS"]["mobNo"].style.color = 'red';
+                            document.forms["JS"]["mobNo"].style.fontFamily = 'sans-serif';
+                        }else{
+                            document.forms["JS"]["mobNo"].style.color = 'green';
+                            document.forms["JS"]["mobNo"].style.fontFamily='Courier New', Courier, monospace;
+                        }
+                    }
+                </script>
+            </tr>
+            <tr>
+                <td><label for="emailAdd"> Enter your Email Address </label></td>
+                <td><input type="text" placeholder=" abc.xyz@nu.edu.pk" name="emailAdd" onchange="EmailChanged()" style="text-align: center;width: 100%;" required></td>
+                <script>
+                    function EmailChanged(){
+                        let EmailAdd = document.forms["JS"]["emailAdd"].value;
+                        const emailFormat = /^[a-zA-Z0-9]+@(\w\w\w.\w\w|\w\w)s?.\w\w\w.\w\w*$/;
+                        if (emailFormat.test(EmailAdd) === false ) {
+                            document.forms["JS"]["emailAdd"].value = "Invalid Email Address";
+                            document.forms["JS"]["emailAdd"].style.color = 'red';
+                            document.forms["JS"]["emailAdd"].style.fontFamily = 'sans-serif';
+                        }else{
+                            document.forms["JS"]["emailAdd"].style.color = 'green';
+                            document.forms["JS"]["emailAdd"].style.fontFamily='Courier New', Courier, monospace;
+                        }
+                    }
+                </script>
+            </tr>
+            <tr>
+                <td><label for="course"> Courses You Want to Enroll </label></td>
+                <td><input type="text" placeholder="Enter Roll No." name="course" onchange="courseChanged()" style="text-align: center;width: 100%;" required></td>
+                <script>
+                    function courseChanged(){
+                        Course = document.forms["JS"]["course"].value;
+                        if (isNaN(Course) || Course < 3 || Course > 5) {
+                            document.forms["JS"]["course"].value = "Invalid No. of Courses";
+                            document.forms["JS"]["course"].style.color = 'red';
+                            document.forms["JS"]["course"].style.fontFamily = 'sans-serif';
+                        }else{
+                            document.forms["JS"]["course"].style.color = 'green';
+                            document.forms["JS"]["course"].style.fontFamily='Courier New', Courier, monospace;
+                        }
+                    }
+                </script>
+            </tr>
+        </table>
+        <br><br>
+        <input type="submit" value="Submit Details" class="btn btn-block btn-primary btn-lg" style="width: 40%; margin-left: 30%;font-size: 24px;">
+        <br>
+        <input type="reset" value="Reset Details" class="btn btn-block btn-primary btn-lg" style="width: 40%; margin-left: 30%;font-size: 24px;">
+    </form>  
+    </div>
+</body>
+</html>

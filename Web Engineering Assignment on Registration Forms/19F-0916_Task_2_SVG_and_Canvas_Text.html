@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Using SVG and Canvas</title>
+</head>
+<body>
+    <h1 style="margin-left: 5em"> Text Using SVG </h1>
+    <br><br>
+    <p style="margin-left: 5em"> <big><b>Simple SVG Text</b></big></p>
+    <svg height="30" width="100" style="margin-left: 5em">
+      <text x="0" y="15" fill="red">19F-0916!</text>
+    </svg> 
+    <svg height="30" width="200">
+      <text x="0" y="15" fill="green">Muhammad Abdullah</text>
+    </svg> 
+     <svg height="30" width="200">
+      <text x="0" y="15" fill="blue">SE(A)</text>
+    </svg> 
+    <br><br>
+    <p style="margin-left: 5em"> <big><b>Shapes SVG Text</b></big></p>
+    <svg height="50" width="100" style="margin-left: 5em">
+        <rect width="200" height="25" style="fill:rgb(218, 231, 38)" />
+      <text x="0" y="15" fill="red" >19F-0916!</text>
+    </svg> 
+    <svg height="50" width="150" style="margin-left: 2em">
+        <rect width="400" height="25" style="fill:rgb(231, 180, 38)" />
+      <text x="0" y="15" fill="green">Muhammad Abdullah</text>
+    </svg> 
+     <svg height="50" width="50" style="margin-left: 2em">
+        <rect width="200" height="25" style="fill:rgb(231, 141, 38)" />
+      <text x="0" y="15" fill="blue">SE(A)</text>
+    </svg> 
+    <br><br>
+    <h1 style="margin-left: 5em"> Text Using Canvas </h1>
+    <p style="margin-left: 5em"> <big><b>FillText Canvas Text</b></big></p>
+    <canvas id="myCanvas"></canvas>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var roll = canvas.getContext("2d");
+        roll.font = "20px Arial";
+        roll.fillText("19F-0916 ",80,50); 
+    </script><br>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var namee = canvas.getContext("2d");
+        namee.font = "20px Arial";
+        namee.fillText("Muhammad Abdullah ",80,73); 
+    </script>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var sec = canvas.getContext("2d");
+        sec.font = "20px Arial";
+        sec.fillText("SE(6A)",80,97); 
+    </script>
+     <p style="margin-left: 5em"> <big><b>strokeText Canvas Text</b></big></p>
+     <canvas id="myCanvas1"></canvas>
+     <script>
+         var canvas = document.getElementById("myCanvas1");
+         var roll = canvas.getContext("2d");
+         roll.font = "20px Arial";
+         roll.strokeText("19F-0916 ",80,50); 
+     </script><br>
+     <script>
+         var canvas = document.getElementById("myCanvas1");
+         var namee = canvas.getContext("2d");
+         namee.font = "20px Arial";
+         namee.strokeText("Muhammad Abdullah ",80,73); 
+     </script>
+     <script>
+         var canvas = document.getElementById("myCanvas1");
+         var sec = canvas.getContext("2d");
+         sec.font = "20px Arial";
+         sec.strokeText("SE(6A)",80,97); 
+     </script>
+</body>
+</html>

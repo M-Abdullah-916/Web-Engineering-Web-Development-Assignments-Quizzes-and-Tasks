@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG VS Canvas</title>
+</head>
+<body>
+    <h1 style="margin-left: 5em"> Difference Between SVG and Canvas</h1>
+    <br>
+    <table border="1px" width="50%" style="margin-left: 5em">
+        <thead>
+            <tr>
+                <td style="font-size:25px" align="center"><b>SVG</b></td>
+                <td style="font-size:25px" align="center"><b>Canvas</b></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="font-size:25px" align="left">SVG stands for Scalable Vector Graphics</td>
+            </tr>
+            <tr>
+                <td style="font-size:25px" align="left">SVG is composed of shapes</td>
+                <td style="font-size:25px" align="left">Canvas is composed of pixels</td>
+            </tr>
+            <tr>
+                <td style="font-size:25px" align="left">SVG is Vector based</td>
+                <td style="font-size:25px" align="left">Canvas is Raster based</td>
+            </tr>
+            <tr>
+                <td style="font-size:25px" align="left">SVG has better Scalability</td>
+                <td style="font-size:25px" align="left">Canvas has Poor Scalability</td>
+            </tr>
+            <tr>
+                <td style="font-size:25px" align="left">SVG can be printed with high quality at any resolution</td>
+                <td style="font-size:25px" align="left">Canvas is not suitable to print on higher resolution</td>
+            </tr>
+            <tr>
+                <td style="font-size:25px" align="left">SVG provides better performance with smaller number of objects</td>
+                <td style="font-size:25px" align="left">Canvas provides better performance with larger number of objects</td>
+            </tr>
+            <tr>
+                <td style="font-size:25px" align="left">SVG provides better performance with larger surface</td>
+                <td style="font-size:25px" align="left">Canvas provides better performance with smaller surface</td>
+            </tr>
+            <tr>
+                <td style="font-size:25px" align="left">SVG can be modified with script or css</td>
+                <td style="font-size:25px" align="left">Canvas can be modified with script only</td>
+            </tr>
+            <tr>
+                <td style="font-size:25px" align="left">SVG makes multiple graphical elements for a page</td>
+                <td style="font-size:25px" align="left">Canvas makes single element with same behaviour</td>
+            </tr>
+            <tr>
+                <td style="font-size:25px" align="left">SVG has better text rendering capabilities</td>
+                <td style="font-size:25px" align="left">Canvas has poor text rendering capabilities</td>
+            </tr>
+        </tbody>
+    </table>
+    <label style="margin-left: 5em"> <big><b>SVG Text</b></big></label>
+    <svg height="30" width="70" style="margin-left: 5em">
+      <text x="0" y="25" fill="red">19F-0916!</text>
+    </svg> 
+    <label style="margin-left: 5em"> <big><b>Canvas Text</b></big></label>
+    <canvas id="myCanvas"></canvas>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var roll = canvas.getContext("2d");
+        roll.font = "20px Arial";
+        roll.fillText("19F-0916 ",80,145); 
+    </script>
+</body>
+</html>
