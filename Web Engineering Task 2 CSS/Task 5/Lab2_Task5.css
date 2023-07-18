@@ -1,0 +1,22 @@
+.fields{
+    font-family: sans-serif;
+    padding-right: 70%;
+}
+.register{
+    text-align: center;
+    padding-right: 68%;
+    padding-left: 68%;
+    background-color: #eb3030;
+    border-color: #eb3030;
+    color: white;
+    border-radius: 3px;
+}
+div.credentials{
+    position: relative;
+    animation-name: movement;
+    animation-duration: 5s;
+}
+@keyframes movement{
+    0% {left: 0px; top: 0px;}
+    100% {left: 400px; top: 0px;}
+}

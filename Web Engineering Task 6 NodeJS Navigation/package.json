@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "formidable": "^2.0.1",
+    "nodemailer": "^6.7.3",
+    "nodemailer-smtp-transport": "^2.4.2",
+    "nodemon": "^2.0.15",
+    "upper-case": "^2.0.2"
+  }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Task 9</title>
+</head>
+<body>
+<h1 style="margin-left:10em">Pete's Pizza Delivery</h1>
+<h2 style="margin-left:15em">Online Order Form</h2>
+<br>
+<form>
+<label for="user_name" style="margin-left:15em"> *Name: </label>
+<input type="text" id="user_name" style="margin-left:2em" required>
+<label for="tel"> *Tel: </label>
+<input type="number" id="tel" style="margin-left:2em" required>
+<br><br>
+<label for="address" style="margin-left:15em"> *Address: </label>
+<input type="address" id="address" style="margin-left:0.99em" required>
+<label for="email"> *Email: </label>
+<input type="email" id="email" style="margin-left:0.65em" required>
+<br><br>
+<label for="city" style="margin-left:15em"> *Town/city: </label>
+<input type="city" id="city" style="margin-left:0.1em" required>
+<br><br>
+<label for="code" style="margin-left:15em"> *Postcode: </label>
+<input type="number" value="code" style="margin-left:0.6em" required>
+</form>
+<br>
+<label style="margin-left:30em"> *Required Field: </label>
+<br><br><br>
+<table>
+<thead>
+<tr>
+<td><label style="margin-left:20em"> <big><b>Topping</b></big> </label></td>
+<td><label style="margin-left:8em"> <big><b>Sizes</b></big> </label></td>
+<td><label style="margin-left:8em"> <big><b>Extra</b></big> </label></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><input type="radio" id="margherita" style="margin-left:22em" name="topping">
+<label for="margherita" style="margin-left:0.1em"> Margherita </label></td>
+<td><input type="radio" id="small" style="margin-left:9em" name="size">
+<label for="small" style="margin-left:0.1em"> Small </label></td>
+<td><input type="checkbox" id="mushrooms" style="margin-left:6em" name="extra">
+<label for="mushrooms" style="margin-left:0.1em"> Mushrooms </label></td>
+</tr>
+<tr>
+<td><input type="radio" id="four_season" style="margin-left:22em" name="topping">
+<label for="four_season" style="margin-left:0.1em"> Four Season </label></td>
+<td><input type="radio" id="med" style="margin-left:8.40em" name="size">
+<label for="med" style="margin-left:0.1em"> Medium </label></td>
+<td><input type="checkbox" id="gp" style="margin-left:6em" name="extra">
+<label for="gp" style="margin-left:0.1em"> Green Pepers </label></td>
+</tr>
+<tr>
+<td><input type="radio" id="meat" style="margin-left:22em" name="topping">
+<label for="meat" style="margin-left:0.1em"> Meat Feast </label></td>
+<td><input type="radio" id="large" style="margin-left:8.40em" name="size">
+<label for="large" style="margin-left:0.1em"> Large </label></td>
+<td><input type="checkbox" id="anchovies" style="margin-left:6em" name="extra">
+<label for="anchovies" style="margin-left:0.1em"> Anchovies </label></td>
+</tr>
+</table>
+<td><input type="checkbox" id="EC" style="margin-left:50.50em">
+<label for="EC" style="margin-left:0.1em"> Extra Cheese </label></td>
+<br><br>
+<label for="delivery" style="margin-left:20em"> Preferred Delivery Date: </label></td>
+<input type="time" id="delivery" style="margin-left:0.5em">
+<br><br>
+<label for="delivery_inst" style="margin-left:20em">  Delivery Instructions: </label></td>
+<input type="text" id="delivery_inst" style="margin-left:0.5em">
+<br><br>
+<input type="submit" value="Submit Order" style="margin-left:33em">
+</body>
+</html>

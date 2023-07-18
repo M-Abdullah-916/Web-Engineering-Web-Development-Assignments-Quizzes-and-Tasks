@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("img").hide();
+            $("button").click(function(){
+                $("img").toggle();
+                var text = $("button").text();
+                if(text == "Show"){$("button").text("Hide");}
+                if(text == "Hide"){$("button").text("Show");}        
+            });
+        });
+    </script>
+</head>
+<body>
+    <button style="font-size: 36px;margin-left: 10%;">Show</button>
+    <br><br>
+    <img src="Elden_Ring_game_screen.jpg" alt="Elder Ring" style="width: 70%;margin-left: 10%;">
+</body>
+</html>

@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Image Tag</title>
+</head>
+<body>
+<img src="NU-logo.jpg" alt="Fast NU Logo" width="500" height="500">
+</body>
+</html>

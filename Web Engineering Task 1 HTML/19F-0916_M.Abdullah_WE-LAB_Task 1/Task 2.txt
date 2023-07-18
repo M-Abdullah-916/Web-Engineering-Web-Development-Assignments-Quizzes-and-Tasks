@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Formatting</title>
+</head>
+<body>
+<p><b>This text is bold</b></p>
+<p><strong>This text is strong</strong></p>
+<p><big>This text is Big</big></p>
+<p><i>This text is Italic</i></p>
+<p><em>This text is emphasized</em></p>
+<p><small>This text is small</small></p>
+<p>This is <sub>subscript</sub> and <sup>superscript</sup></p>
+</body>
+</html>

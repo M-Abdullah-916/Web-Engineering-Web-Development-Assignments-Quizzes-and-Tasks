@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Image Tag</title>
+</head>
+<body>
+<a href="http://nu.edu.pk/" target="_blank">
+<img src="C:\Users\f190916\Downloads\NU-logo.jpg" alt="Fast NU Logo" width="500" height="500">
+</a>
+</body>
+</html>

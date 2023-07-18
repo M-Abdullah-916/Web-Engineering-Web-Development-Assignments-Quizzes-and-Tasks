@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script>
+        function calculator(){
+         var first,second,add,mul,div,sub;
+         first=Number(document.getElementById("first").value);
+         second=Number(document.getElementById("second").value);
+         add = first + second;
+         mul = first * second;
+         sub = first - second;
+         if(second != 0){
+            div = first / second;
+         }
+         else {
+             div = "Not Possible";
+         }
+         document.getElementById("Add").value = add;
+         document.getElementById("Sub").value = sub;
+         document.getElementById("Mul").value = mul;
+         document.getElementById("Div").value = div;
+         }
+     </script>
+</head>
+<body>
+    <div style="margin-left: 10%;">
+    <h1>A Simple Calculator</h1>
+    <form action="">
+        <label for="first">Enter First Number = </label>
+        <input type="text" id="first">
+        <br><br>
+        <label for="second">Enter Second Number = </label>
+        <input type="text" id="second">
+        <br><br>
+        <button type="button" class="btn btn-primary" onclick="getElementById('calcul').innerHTML = calculator(first,second)">Calculate</button>
+        <br><br>
+        <label for="result1">Addition = </label>
+        <input id="Add">
+        <br>
+        <label for="result2">Subtraction = </label>
+        <input id="Sub">
+        <br>
+        <label for="result3">Multiplication = </label>
+        <input id="Mul">
+        <br>
+        <label for="result4">Division = </label>
+        <input id="Div">
+    </form>
+</div>
+
+
+
+</body>
+</html>

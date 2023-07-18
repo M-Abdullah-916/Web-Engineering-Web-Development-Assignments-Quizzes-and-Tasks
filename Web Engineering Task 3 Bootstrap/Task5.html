@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script>
+        function calender(){
+            var month , day;
+            month = document.getElementById("month").value;
+            switch(month)
+            {
+                case "jan":
+                    day = 31;
+                    break;
+                
+                case "feb":
+                    day = 28;
+                    break;
+                
+                case "mar":
+                    day = 31;
+                    break;
+                
+                case "apr":
+                    day = 30;
+                    break;
+                
+                case "may":
+                    day = 31;
+                    break;
+                
+                case "jun":
+                    day = 30;
+                    break;
+                
+                case "jul":
+                    day = 31;
+                    break;
+                
+                case "aug":
+                    day = 31;
+                    break;
+                
+                case "sep":
+                    day = 30;
+                    break;
+                
+                case "oct":
+                    day = 31;
+                    break;
+                
+                case "nov":
+                    day = 30;
+                    break;
+                
+                case "dec":
+                    day = 31;
+                    break;
+                
+                default:
+                    day = "Wrong Entry, Try Again";
+                    break;
+                
+            }
+            document.getElementById("Days").value = day;
+        }
+    </script>
+</head>
+<body>
+    <div style="margin-left: 10%; margin-top: 10%;">
+    <label for="month"> Please Enter the name of month (use only first three letters like jan, feb) : </label>
+    <input type="text" id="month">
+    <br><br>
+    <button type="button" class="btn btn-primary" onclick="getElementById('calen').innerHTML = calender()">Submit</button>
+    <br><br>
+    <label for="result">Total Number of Days Are : </label>
+    <input id="Days" style="color: red;">
+    </div>
+</body>
+</html>

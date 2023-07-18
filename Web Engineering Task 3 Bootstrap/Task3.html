@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div style="margin-left: 15%;">
+        <h2>Click on any Button for a Message</h2>
+        <br>
+        <button type="button" class="btn btn-lg" onclick="getElementById('clickedButton').innerHTML = 'I am a Simple Button '">Basic</button>
+        <button type="button" class="btn btn-default btn-lg" onclick="getElementById('clickedButton').innerHTML = 'I am a Default Button '">Default</button>
+        <button type="button" class="btn btn-primary btn-lg" onclick="getElementById('clickedButton').innerHTML = 'I am a Primary Button '">Primary</button>
+        <button type="button" class="btn btn-success btn-lg" onclick="getElementById('clickedButton').innerHTML = 'I am a Success Button '">Success</button>
+        <button type="button" class="btn btn-info btn-lg" onclick="getElementById('clickedButton').innerHTML = 'I am a Info Button '">Info</button>
+        <button type="button" class="btn btn-warning btn-lg" onclick="getElementById('clickedButton').innerHTML = 'I am a Warning Button '">Warning</button>
+        <button type="button" class="btn btn-danger btn-lg" onclick="getElementById('clickedButton').innerHTML = 'I am a Danger Button '">Danger</button>
+        <button type="button" class="btn btn-link btn-lg" onclick="getElementById('clickedButton').innerHTML = 'I am a Link Button '">Link</button>      
+      </div>
+      <br>
+      <p id="clickedButton" style="margin-left: 15%;font-size: 25px;font-style: italic;" ></p>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("table").find('input[name="boxes"]').each(function(){
+                    if($(this).is(":checked")){$(this).parents("tr").remove();}        
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1 style="margin-left: 30%;">Delete Rows</h1>
+    <table style="width: 50%; margin-left: auto;margin-right: auto;margin-top: 5%;text-align: center;" border="1">
+        <thead>
+            <tr>
+                <td>Select</td>
+                <td>Name</td>
+                <td>Age</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="box"><input type="Checkbox" name="boxes"></td>
+                <td>Abdullah</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td class="box"><input type="Checkbox" name="boxes"></td>
+                <td>M Abdullah</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td class="box"><input type="Checkbox" name="boxes"></td>
+                <td>Muhammad Abdullah</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td class="box"><input type="Checkbox" name="boxes"></td>
+                <td>M.A.B.D.U.L.L.A.H</td>
+                <td>19</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <button style="font-size: 20px;margin-left: 30%;">Delete Selected Row/s</button>
+</body>
+</html>

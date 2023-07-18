@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Image Tag</title>
+</head>
+<body>
+<form>
+<h1>Sign-Up Form</h1>
+
+<label for="user_name"> User Name </label>
+<br>
+<input type="text" id="user_name">
+<br><br>
+<label for="email"> Email </label>
+<br>
+<input type="email" id="email">
+<br><br>
+<label for="pass"> Password </label>
+<br>
+<input type="password" id="pass">
+<br><br>
+<label for="pass_confirm"> Confirm Password </label>
+<br>
+<input type="password" id="pass_confirm">
+<br><br>
+<input type="reset" value="Reset">
+<br><br>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>

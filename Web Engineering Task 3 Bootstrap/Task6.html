@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script>
+        function table(){
+            var Num;
+            Num = Number(document.getElementById("num").value);
+            if(isNaN(Num))
+            {
+                var ans = document.getElementById("Ans");
+                ans.innerHTML +=  " Enter A Valid Number Please! <br/>" ;
+            }
+            else
+            {
+                for(var i = 1; i<= 10;i++)
+                 {
+                    var ans = document.getElementById("Ans");
+                    ans.innerHTML += (Num * i) + "  ";
+                 }
+                 ans.innerHTML += "<br/>";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1 style="margin-top: 5%;margin-left: 3%;"> Hey! Write any number to Print Table of that Number!</h1>
+    <div style="margin-top: 5%;margin-left: 3%;">
+        <label for="num"> Enter a Number : </label>
+        <input type="text" id="num">
+        <br><br>
+        <button type="button" class="btn btn-primary" onclick="getElementById('tab').innerHTML = table()">Generate Table</button>
+        <br><br>
+        <p id="Ans" style="font-size: 20px;"></p>
+
+    </div>
+</body>
+</html>
