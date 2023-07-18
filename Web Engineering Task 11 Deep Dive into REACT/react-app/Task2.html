@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="task2.css">
+  </head>
+  <body>
+
+    <div id="mydiv"></div>
+
+    <script type="text/babel">
+      function App() {
+  return (
+    <div className = "form-box">
+        <h5 className = "form-step"> REACT FORM </h5>
+        <form>          
+            <div className = "field1">
+            <input placeholder="Name"/>        
+            <input placeholder="UserName"/>
+            <input placeholder="Password"/>
+            <input placeholder="Confirm Password"/>
+            </div>
+            <button type = "submit" id= "submitBtn" className = "sbtBtn"> Submit Details</button>
+        </form>
+    </div>
+  );
+}
+
+
+
+      ReactDOM.render(<App />, document.getElementById('mydiv'))
+    </script>
+
+  </body>
+</html>

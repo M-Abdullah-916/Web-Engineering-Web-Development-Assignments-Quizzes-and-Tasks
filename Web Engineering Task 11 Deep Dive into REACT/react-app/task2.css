@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 3px solid rgb(15, 14, 14);
+  }
+  
+  .form-box{
+    min-width: 100%;
+    height: 100vh;
+    background-color: rgb(110, 77, 208);
+    margin: 0vw;
+    padding: 5vw ;
+    position:relative; 
+    text-align: center;
+  }
+  
+  .form-box h5{
+    font-size: 35px ;
+    text-align: center;
+    color: #fdfdfd;
+    margin: 0 0 .5vh 0;
+  }
+  
+  .form-box label{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 0 2vh 0;
+  }
+  
+  .form-box input{
+    display: block;
+    width: 100%;
+    padding: .5rem .8rem .5rem .8rem;
+    margin: .9vw 0 ;
+    border:0;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 25px;
+  }
+  
+  .sbtBtn{
+    display: inline-block;
+    width: 50%;
+    height: 3rem;
+    text-align: center;
+    color: rgb(2, 1, 1);
+    border: 3px solid rgb(15, 14, 14);
+    bottom: 0;
+    cursor: pointer;
+    font-size: 30px;
+    border-radius: 20px 20px 20px 20px; 
+  }
+  
